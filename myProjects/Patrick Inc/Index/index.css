@@ -1,0 +1,385 @@
+@media (max-width:440px) {
+    body{
+        overflow-x: hidden;
+    }
+    .Logo{
+        width: auto;
+        height: 1%;
+    }
+    .nav li{
+        visibility: collapse;
+    }
+    .nav button{
+        visibility: collapse;
+    }
+    .h1{
+        font-size: 2rem;
+    }
+    .h2{
+        font-size: 1rem;
+    }
+    .h3{
+        font-size: 1rem;
+    }
+    .container{
+        flex-wrap:wrap;
+    }
+    .whoAmI{
+        width:max-content;
+    }
+    .personCoding{
+        visibility: collapse;
+    }
+    .leftSide button{
+        margin-left: 3rem;
+    }
+    
+    .container2{
+        text-align: initial;
+    }
+    .designPlan{
+        margin-left: .7rem;
+        width: 50%;
+        height: 70%;
+    }
+    .hostingPlan{
+        width: 50%;
+        height: 70%;
+    }
+    
+    .blurStart {
+        visibility: collapse;
+    }
+    .blurEnd{
+        visibility: collapse;
+    }
+    
+    .footer{
+        gap: 1em;
+    }
+    .p{
+        font-size: 10%;
+    }
+    h4{
+        font-size: 100% !important;
+        font-weight: normal;
+    }
+    .icons{
+        transform:scale(70%);
+    }
+    .studentsOfStem{
+        transform: scale(70%);
+    }
+    .Logo{
+        transform: scale(70%);
+        margin-left: 15px !important;
+    }
+   
+    
+    
+}
+html {
+    overflow-x: hidden;
+    padding: 0;
+}
+
+body{
+ 
+    background-color: #18181b;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: Garamond;
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+    font-weight: lighter;
+}
+h3{
+    font-size: 1.5rem;
+}
+h4{
+    font-size: 100%;
+    font-weight: normal;
+    text-align: center;
+}
+/*
+Nav Bar
+*/
+@keyframes titleOpacity {
+    from{
+        opacity: .3;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.nav{
+    display: flex;
+    margin: auto;
+    max-width: 100%;
+    padding: 2rem 1rem;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+
+}
+
+.nav li{
+    display: inline-block;
+    margin-left: 3rem;
+}
+
+.nav li:hover{
+    text-decoration: underline;
+    text-decoration-color: #1d4ed8;
+    text-underline-offset: 10px;
+    text-shadow: 6px 6px 15px #1d4ed8;
+    animation: titleOpacity 0.5s ease ;
+}
+
+.nav li:hover{
+    transform: translateY(-10px);
+    transition: transform 0.3s ease;
+}
+
+.nav a{
+    text-decoration: none;
+    text-underline-offset: 15px;
+    padding: .5rem;
+    color: white;
+    
+}
+
+.nav a:active{
+    opacity: 0.5;
+    transition: 0.05s ease;
+}
+
+
+.btn{
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+    background-color: #1d4ed8;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 0px 15px #173186;
+    color: white;
+}
+.btn:hover{
+    background-color: #1e40af;
+    transition: .5s ease-out ;
+    
+}
+.btn:active{
+    background-color: #072587;
+    box-shadow: inset 0 0 10px #031551;
+    transition: .2s;
+}
+
+.Logo{
+    margin-left: 45px;
+    height: 6rem;
+    max-width: auto;
+    margin-top: 0;
+    top: 0;
+}
+
+/*introduction*/
+.whoAmI{
+    max-width: 70%;
+    color: white;
+    margin: auto;
+    padding: 4.5rem;
+}
+.whoAmISmall{
+    visibility: collapse;
+}
+.blur{
+    box-shadow: 0 50px 150px 50px #072587;
+    position: absolute;
+    z-index: 99;
+}
+.gradientText{
+    background-image: linear-gradient(40deg, #f3ec78, #af4261 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.container{
+    gap: 1rem;
+    display: flex;
+}
+
+.underLineTransparent{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1.5px white;
+}
+.leftSide p{
+    margin: 2rem 0rem;
+    font-size: 1.5rem;
+}
+
+.leftSide div{
+    margin: 20px;
+}
+.personCoding{
+    box-shadow: 0 0 70px -35px #99a7d5 ;
+}
+
+/*price plans*/
+.Prices{
+    margin-bottom: 10em;
+}
+.Prices h1{
+    display: flex;
+    justify-content: center;
+    color: #1d4ed8;
+    text-shadow: 5px 5px 100px #1d4ed8;
+    margin-bottom: 2em;
+}
+.Prices h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+.Prices h3{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+    text-align: center;
+}
+.pricingOptions{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.designPlan{
+    grid-column: 2;
+    background-color: rgb(47, 47, 47);
+    padding: 3rem 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 70px -45px #99a7d5;
+}
+
+.designPlan:hover{
+    box-shadow: 0 0 20px #1d4ed8;
+    transition: all .5s ease;
+    transform: translateY(-5px);
+    transition: transform .3 ease;
+}
+.hostingPlan{
+    grid-column: 4;
+    background-color: rgb(47, 47, 47);
+    padding: 3rem 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 70px -45px #99a7d5;
+}
+.hostingPlan:hover{
+    box-shadow: 0 0 20px #1d4ed8;
+    transition: all .5s ease;
+    transform: translateY(-5px);
+    transition: transform .3 ease;
+}
+.content{
+    max-width: 15rem;
+    display: inline-block;
+}
+.content p{
+    position: relative;
+    font-size: 1.3rem;
+    transform: translateY(-48px);
+    padding-left: 30px;
+    padding-bottom: 0;
+}
+.card{
+    display: flex;
+    justify-content: center;
+}
+
+
+/*nonprofits*/
+/*maybe add background card like stuff to the non-profits*/
+.leftsideNonProfits{
+    text-align: center;
+}
+.blurStart{
+    box-shadow: -225px -10px 150px 50px #072587;
+    position: absolute;
+    z-index: 99;
+}
+.blurEnd{
+    box-shadow: 225px -10px 150px 50px #072587;
+    position: absolute;
+    z-index: 99;
+}
+
+.nonProfits{
+    margin-bottom: 10em;
+}
+.nonProfits h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5em;
+    color: #1d4ed8;
+    text-shadow: 5px 5px 100px #1d4ed8;
+}
+.nonProfits h2{
+    display: flex;
+    justify-content: center;
+}
+.nonProfits p{
+    margin: 2rem 6rem;
+    font-size: 1.5rem;
+}
+.h4{
+    font-size: 140%;
+
+}
+
+
+.socials{
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.socials a:hover{
+    transition: all .3s ease;
+    box-shadow: 0 0 20px 1px #1d4ed8;
+}
+.studentsOfStem{
+    height: 48px;
+    max-width: 48px;
+}
+/*footer*/
+
+footer{   
+    justify-content: center;
+    gap: 1em;
+    display: flex;
+    align-items: center;
+}
+footer p{
+    text-shadow: 1px 1px 90px white;
+}
+
+.footerLogo{
+    padding: 1em 0em;
+    height: 4.5rem;
+    max-width: auto;
+}
+
+.arrow:hover{
+    transition: all .3s ease;
+    box-shadow: 0 0 20px 1px #1d4ed8;
+}
